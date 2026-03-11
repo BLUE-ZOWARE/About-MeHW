@@ -6,44 +6,92 @@
     <title>About Me | Daniel</title>
 
     <meta property="og:title" content="About Daniel">
-    <meta property="og:description" content="Portfolio and personal background of me.">
-    <meta property="og:image" content="path-to-your-preview-image.jpg">
+    <meta property="og:description" content="Portfolio of Daniel.">
+    <meta property="og:image" content="path-to-your-image.jpg">
     <meta property="og:url" content="https://yourwebsite.com">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Nav bar section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Daniel Mendoza Lopez</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto gap-3">
+                        <a class="nav-link" href="https://github.com/BLUE-ZOWARE?tab=repositories" target="_blank">Github</a>
+                        <a class="nav-link" href="https://www.linkedin.com/in/daniel-mendoza-lopez-665080277/" target="_blank">LinkedIn</a>
+                        <a class="nav-link" href="mailto:geodanholl77@gmail.com">Email: geodanholl77@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- Profile Section -->
+<main class="container my-5">
+    <div class="row align-items-center py-5">
+        
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+            <img src="https://i.pinimg.com/1200x/71/1a/5c/711a5c35e35d8ec2ec74ad228001e821.jpg" alt="A photo of Daniel" class="img-fluid profile-img shadow-lg">
+        </div>
+
+        <div class="col-md-7">
+            <h1 class="display-4 fw-bold mb-3">Hi, I'm Daniel</h1>
+            <p class="lead">
+                I am a passionate web developer and Engine Programmer, currently honing my skills in front-end design and IoT integration. I love building clean, functional programs that provide great user experiences.
+            </p>
+            <div class="mt-4 d-flex gap-2">
+                <a href="#" class="btn btn-primary btn-lg px-4">Projects</a>
+                <a href="#" class="btn btn-outline-light btn-lg px-4">About me</a>
+            </div>
+        </div>
+
     </div>
+</main>
+
+
+<section class="container my-5">
+    <h2 class="text-center mb-4">My Skills</h2>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="p-4 rounded-4 shadow-sm bg-dark border-start border-4 border-primary">
+                <h3 class="h4 mb-4 text-primary fw-bold">Technical & IT</h3>
+                <ul class="list-unstyled d-flex flex-wrap gap-2">
+                    <li class="badge rounded-pill bg-primary px-3 py-2">Stuff</li>
+                    <li class="badge rounded-pill bg-primary px-3 py-2">Stuff</li>
+                    <li class="badge rounded-pill bg-primary px-3 py-2">Bootstrap 5.3</li>
+                    <li class="badge rounded-pill bg-primary px-3 py-2">Stuff</li>
+                    <li class="badge rounded-pill bg-primary px-3 py-2">Github</li>
+                    <li class="badge rounded-pill bg-primary px-3 py-2">VS Code</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="p-4 rounded-4 shadow-sm bg-dark border-start border-4 border-success">
+                <h3 class="h4 mb-4 text-success fw-bold">Business & Workflow</h3>
+<ul class="list-unstyled d-flex flex-wrap gap-2">
+         <li class="badge rounded-pill bg-success px-3 py-2">Project Management</li>
+     <li class="badge rounded-pill bg-success px-3 py-2">TTime Mangament</li>
+ <li class="badge rounded-pill bg-success px-3 py-2">Client Communication</li>
+ <li class="badge rounded-pill bg-success px-3 py-2">Agile Methodologies</li>
+ <li class="badge rounded-pill bg-success px-3 py-2">Problem Solving</li>
+ <li class="badge rounded-pill bg-success px-3 py-2">Strategic Planning</li>
+  </ul>
   </div>
-</nav>
+ </div>
+ </div>
+</section>
 
 
 
@@ -57,7 +105,98 @@
 
 
 
+<!-- Cards Section -->
+<section class="row mt-5 g-4">
+    <h2 class="text-center mb-4">My Projects</h2>
+    
+    <div class="col-md-4">
+        <div class="card h-100 bg-dark text-white border-secondary shadow">
+            <img src="web-project-preview.jpg" class="card-img-top" alt="Screenshot of my Web Application">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">Project: N/A</h5>
+                <p class="card-text text-secondary">Loreum Ipsum</p>
+                <a href="#" class="btn btn-primary btn-sm" target="_blank">Check it out</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100 bg-dark text-white border-secondary shadow">
+            <img src="iot-project-preview.jpg" class="card-img-top" alt="Hardware setup for IoT project">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">Project: N/A</h5>
+                <p class="card-text text-secondary">Lorem Ipsum.</p>
+                <a href="#" class="btn btn-primary btn-sm" target="_blank">Check it out</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 bg-dark text-white border-secondary shadow">
+            <img src="https://imgs.search.brave.com/Us1YNjPX55rKvbSDtR69e_K20ZkDg_L9WRM1kiYcRn8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2xhc3NpY3BvcG1h/Zy5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMTkvMDgvYWZs/b2Nrc2VhZ3VsbHMu/anBn
+            " class="card-img-top" alt="Lyrics Page Project Screenshot">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">Song Lyrics Page</h5>
+                <p class="card-text text-secondary">A Page dedicated to the song "I an So Far Away" By a Flock Of Seagulls.</p>
+                <a href="https://blue-zoware.github.io/HWLyrics/" class="btn btn-primary btn-sm" target="_blank">Check it out</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-dark-subtle">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="display-5 fw-bold mb-4 text-primary">My Story</h2>
+                <hr class="w-25 mx-auto border-primary border-3 opacity-100 mb-5">
+                
+                <article class="fs-5 lh-lg text-secondary">
+                    <p class="mb-4">
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </article>
+
+                <div class="mt-5 p-4 rounded-4 bg-dark border border-secondary">
+                    <p class="fst-italic mb-0">"My quote."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-5 mt-5 border-top border-secondary">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="fw-bold mb-3">Daniel's Portfolio</h5>
+                
+                <div class="mb-3">
+                    <a href="https://www.linkedin.com/in/daniel-mendoza-lopez-665080277/" class="text-white text-decoration-none mx-2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/BLUE-ZOWARE?tab=repositories" class="text-white text-decoration-none mx-2" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="mailto:geodanholl77@gmail.com" class="text-white text-decoration-none mx-2">Email</a>
+                </div>
+
+                <hr class="w-25 mx-auto bg-secondary">
+                
+                <p class="text-secondary small mt-3 mb-0">
+                    &copy; 2026 Daniel Mendoza Lopez. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
