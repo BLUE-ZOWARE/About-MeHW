@@ -1,56 +1,97 @@
+
+/* =========================================
+   1. GLOBAL CONFIGURATION
+   ========================================= */
 html {
     scroll-behavior: smooth;
 }
 
-/* Custom Styles */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #121212; /* A dark background */
-    color: #ffffff;            /* White text for high contrast */
+    color: #ffffff;
+    background-color: #0f0f0f;
+    
+   
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-attachment: fixed; 
 }
 
-/* Resize the profile image */
+/* =========================================
+   2. NAVIGATION & UI ELEMENTS
+   ========================================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+section {
+    scroll-margin-top: 80px; 
+}
+
+
+.navbar-icon {
+    color: white !important;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar-icon:hover {
+    color: #0d6efd !important;
+    text-shadow: 0 0 15px rgba(13, 110, 253, 0.8);
+    transform: scale(1.1);
+}
+
+/* Custom Green Glow for LinkedIn */
+.bi-linkedin:hover {
+    color: #198754 !important; 
+    text-shadow: 0 0 15px rgba(25, 135, 84, 0.8);
+}
+
+
+.fs-2 {
+    font-size: 2rem !important;
+}
+
+/* =========================================
+   3. HERO & PROFILE
+   ========================================= */
 .profile-img {
-    max-width: 300px;
+    max-width: 210px;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* project cards */
-
-/* Ensure all project images fit well */
-.card-img-top {
-    height: 200px;
-    object-fit: cover; /* This crops the image to fit */
-    border-bottom: 1px solid #444;
+/* Interactive Atmosphere */
+.glow-orb {
+    position: fixed;
+    top: -10%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(13, 110, 253, 0.15), transparent 70%);
+    filter: blur(80px);
+    z-index: -1;
+    pointer-events: none;
 }
 
-.card {
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
+/* =========================================
+   4. SKILLS & PROJECTS
+   ========================================= */
 
-/* Hover effect to make it interactive */
-.card:hover {
-    transform: translateY(-10px);
-    border-color: #0d6efd;
-}
-
-
-/* Skill Containers */
-.border-primary {
-    border-color: #0d6efd !important; /* Blue for Tech */
-}
-
-.border-success {
-    border-color: #198754 !important; /* Green for Business */
-}
-
+/* Color-coded Skill Borders */
+.border-primary { border-color: #0d6efd !important; } /* Technical Blue */
+.border-success { border-color: #198754 !important; } /* Business Green */
 
 .badge {
     font-weight: 500;
     font-size: 0.9rem;
     letter-spacing: 0.5px;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .badge:hover {
@@ -58,15 +99,33 @@ body {
     filter: brightness(1.2);
 }
 
+/* Project Cards */
+.card {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 1px solid #333 !important; 
+    background-color: #121212 !important;
+}
 
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #0d6efd !important; 
+}
 
-/* About Me */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #444;
+}
+
+/* =========================================
+   5. ABOUT SECTION (THE STORY) DONT FORGET !!!
+   ========================================= */
 #about {
-    background-color: #1a1a1a; /* Slightly lighter background */
+    background-color: #161616; /* Slight variation for visual separation */
 }
 
 #about article p {
-    color: #000000; /* for long-form reading */
+    color: #000000; 
     text-align: justify; 
 }
 
@@ -74,7 +133,8 @@ body {
     letter-spacing: -1.5px;
 }
 
-/* A subtle "glow" for the quote box */
+/* My quote box */
 #about .bg-dark {
-    box-shadow: inset 0 0 20px rgba(13, 110, 253, 0.05);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
 }
