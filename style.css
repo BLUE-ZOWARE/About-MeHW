@@ -60,7 +60,7 @@ section {
    3. HERO & PROFILE
    ========================================= */
 .profile-img {
-    max-width: 210px;
+    max-width: 240px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
